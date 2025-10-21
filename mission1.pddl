@@ -19,32 +19,34 @@
         (connectedpos wp3 wp5)
         (connectedpos wp4 wp3)
         (connectedpos wp5 wp1)
-        ;define the 
+        ;define the storage at the start for the robot 
         (physicalStorage r)
         (storageEpmty r)
+        ;lander and robot relation 
+        (landerAssociatedRobot  r l)
 
-        (landerRobot  r l)
-
-        (undeployed l)
-        (not (deployed r))
+        ; we start with the robot and lander undeployed 
+        (undeployedLnader l)
+       
 
 
     )
 
     (:goal
         (and
-            (deployed r)
+            ;mission objectives as specified in the coursework
+            
 
-            (collectSample wp1)
-            (scan  wp3)
-            (dataCapture wp5)
+            (collectSample wp1) 
+            (scaned  wp3)
+            (pictureCaptured wp5)
 
-            ;(dataTransmited  r)
+            
 
-
+            ;The storgae of the robot is empty 
             (storageEpmty r)
             (physicalStorage r)
-
+           ;we must also make sure the robot returns back to the the landing site 
             (atLandingsite r)
         )
     )
