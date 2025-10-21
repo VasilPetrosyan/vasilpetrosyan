@@ -2,7 +2,7 @@
     (:domain lunar)
 
     (:objects
-        
+        wp0 - waypoint
         wp1 - waypoint
         wp2 - waypoint
         wp3 - waypoint
@@ -19,6 +19,7 @@
 
     (:init
     ;defining the map
+       
         (connectedpos wp1 wp2)
         (connectedpos wp2 wp1)
         (connectedpos wp2 wp4)
@@ -57,6 +58,7 @@
 
     (:goal
         (and
+            
             ; we must deploy r2
             (deployedrob r2)
             
@@ -64,7 +66,7 @@
             ;mission aims 
             (pictureCaptured  wp3)
             (scaned wp4)
-            
+           
             (pictureCaptured wp2)
 
             (scaned wp6)
