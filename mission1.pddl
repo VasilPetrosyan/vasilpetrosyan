@@ -26,7 +26,7 @@
         (landerAssociatedRobot  r l)
 
         ; we start with the robot and lander undeployed 
-        (undeployedLnader l)
+        (undeployedLanader l)
        
 
 

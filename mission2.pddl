@@ -30,7 +30,7 @@
         (connectedpos wp5 wp6)
         (connectedpos wp6 wp4)
         
-;physical and harddrive storgae is empty at the start
+     ;physical and hard drive storgae is empty at the start
         (physicalStorage r1)
         (physicalStorage r2)
 
@@ -43,7 +43,7 @@
 
     
         ;the robot 2 and its lander 2 are undeployed at the start     
-        (undeployedLnader l2)
+        (undeployedLanader l2)
         
         
       
