@@ -21,8 +21,8 @@
 
         (dataTransmited  ?r - robot) ; a predicate to see if the data has been transmitted by robot
         (pictureCaptured  ?l-waypoint) ;predicate for  pictures captured at waypoint ?l
-        (scaned ?l-waypoint)  ; predicate for data scaned at a waypoint 
-        (collectSample ?x - waypoint) ;predicate for checking if sample is collected at waypiont 
+        (scaned ?l-waypoint)  ; predicate for data scanned at a waypoint 
+        (collectSample ?x - waypoint) ;predicate for checking if sample is collected at waypoint 
         (landerAssociatedRobot  ?r - robot ?l - lander) ; predicate for association between lander and robot
 
         (deployedrob ?r - robot); predicate to see if the robot is depolyed 
@@ -176,7 +176,7 @@
            (scanedbyRobot  ?w ?r)
         )
         :effect (and
-           ;data is transmited and storgage is empty
+           ;data is transmited and storage is empty
             (dataTransmited ?r)
             (storageEpmty ?r)
            
