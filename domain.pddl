@@ -151,7 +151,7 @@
             (scanedbyRobot  ?x ?r)
         )
     )
- ;action used to transmit  images by the robot at waypoint w
+ ;action used to transmit  images by the robot ?r at waypoint w
     (:action transmitImage
         :parameters (?r - robot  ?w - waypoint)
         :precondition (and
@@ -167,7 +167,7 @@
          
         )
     )
-;action used to transmit scans  by the robot at waypoint w
+;action used to transmit scans  by the robot ?r at waypoint ?w
      (:action transmitScan
         :parameters (?r - robot  ?w - waypoint)
         :precondition (and
@@ -183,7 +183,7 @@
            
         )
     )
-    ;a action used for collection of sample by robot r at waypoint x
+    ;a action used for collection of sample by robot ?r at waypoint ?x
     ;works simmilar to scan and capture image however sample collection uses up physical storage instead
     (:action sampleCollecton
         :parameters (?x - waypoint  ?r - robot )
